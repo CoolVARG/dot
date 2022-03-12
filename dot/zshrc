@@ -1,0 +1,195 @@
+# history
+HISTFILE=~/.zsh_history
+HISTSIZE=500000
+SAVEHIST=500000
+
+#Git
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=\$vcs_info_msg_0_
+# PROMPT=\$vcs_info_msg_0_'%# '
+zstyle ':vcs_info:git:*' formats '%b'
+
+# pkgfile
+source /usr/share/doc/pkgfile/command-not-found.zsh
+# highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+# brackets
+ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=blue,bold'
+ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=red,bold'
+ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=yellow,bold'
+ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=magenta,bold'
+# cursor
+#ZSH_HIGHLIGHT_STYLES[cursor]='bg=blue'
+# main
+# default
+ZSH_HIGHLIGHT_STYLES[default]='none'                                 # стандартный цвет
+# unknown
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'                         # неизвестная команда
+# command
+ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=magenta,bold'                # зарезервированное слово
+ZSH_HIGHLIGHT_STYLES[alias]='fg=yellow,bold'                         # алиас
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=green,bold'                        # built-in функция (например, echo)
+ZSH_HIGHLIGHT_STYLES[function]='fg=green,bold'                       # функция, определенная в шелле
+ZSH_HIGHLIGHT_STYLES[command]='fg=green'                             # обычная команда
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=blue,bold'                      # пре-команда (например, sudo в sudo cp ...)
+ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=yellow'                   # разделитель команд, && || ;
+ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=green'                      # команда, найденная в путях (hashed)
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=blue,bold'            # флаги типа -*
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=blue,bold'            # флаги типа --*
+# path
+ZSH_HIGHLIGHT_STYLES[path]='fg=cyan,bold'                            # станлартный путь
+ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=cyan'                          # префикс пути
+ZSH_HIGHLIGHT_STYLES[path_approx]='fg=cyan'                          # примерный путь
+# shell
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=cyan'                             # шаблон (например, /dev/sda*)
+ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=blue'                    # подстановка из истории (команда, начинающаяся с !)
+ZSH_HIGHLIGHT_STYLES[assign]='fg=magenta'                            # присвоение
+ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=cyan'        # конструкции типа "$VARIABLE"
+ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=cyan'          # конструкции типа \"
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='fg=blue'                 # конструкции типа `command`
+# quotes
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=yellow,underline'   # конструкции типа 'text'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=yellow'             # конструкции типа "text"
+# pattern
+#ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
+# root
+#ZSH_HIGHLIGHT_STYLES[root]='bg=red'
+
+# bindkeys
+bindkey '^[[A'  up-line-or-search               # up arrow for back-history-search
+bindkey '^[[B'  down-line-or-search             # down arrow for fwd-history-search
+bindkey '\e[1~' beginning-of-line               # home
+bindkey '\e[2~' overwrite-mode                  # insert
+bindkey '\e[3~' delete-char                     # del
+bindkey '\e[4~' end-of-line                     # end
+bindkey '\e[5~' up-line-or-history              # page-up
+bindkey '\e[6~' down-line-or-history            # page-down
+
+# autocomplit
+autoload -U compinit
+compinit
+zstyle ':completion:*' insert-tab false
+zstyle ':completion:*' max-errors 2
+
+# promptinit
+autoload -U promptinit
+promptinit
+
+# Enable colors and change prompt:
+autoload -U colors && colors
+
+## PROMPT && RPROMPT
+if [[ $EUID == 0 ]]; then
+# [root@host ~]#
+  PROMPT="%{$fg_bold[red]%}[%{$reset_color%}\
+%{$fg_bold[yellow]%}%n%{$reset_color%}\
+%{$fg_bold[green]%}@%{$reset_color%}\
+%{$fg_no_bold[blue]%}%m %{$reset_color%}\
+%{$fg_bold[magenta]%}%~%{$reset_color%}\
+%{$fg_bold[red]%}]%{$reset_color%}# "
+else
+# [user@host ~]$
+  PROMPT="%{$fg_bold[red]%}[%{$reset_color%}\
+%{$fg_bold[yellow]%}%n%{$reset_color%}\
+%{$fg_bold[green]%}@%{$reset_color%}\
+%{$fg_no_bold[blue]%}%m %{$reset_color%}\
+%{$fg_bold[magenta]%}%~%{$reset_color%}\
+%{$fg_bold[red]%}]%{$reset_color%}$ "
+fi
+
+# correct
+setopt CORRECT_ALL
+SPROMPT="Correct '%R' to '%r' ? ([Y]es/[N]o/[E]dit/[A]bort) "
+
+# append history
+setopt APPEND_HISTORY
+
+# ignore dups in history
+setopt HIST_IGNORE_ALL_DUPS
+
+# ighore additional space in history
+setopt HIST_IGNORE_SPACE
+
+# reduce blanks in history
+setopt HIST_REDUCE_BLANKS
+
+# disable beeps
+unsetopt beep
+
+# autoload calc
+autoload zcalc
+
+# editor
+export EDITOR="micro"
+#export PAGER="vimpager"
+
+
+show_which() {
+  OUTPUT=$(which $1 | cut -d " " -f7-)
+}
+
+alias ls='show_which ls && ls --color=auto'
+alias ll='show_which ll && ls --group-directories-first -l --human-readable'
+alias lr='show_which lr && ls --recursive'
+alias la='show_which la && ll --almost-all'
+alias lx='show_which lx && ll -X --ignore-backups'
+alias lz='show_which lz && ll -S --reverse'
+alias lt='show_which lt && ll -t --reverse'
+alias lm='show_which lm && la | more'
+
+# function to extract archives
+# EXAMPLE: unpack file
+unpack () {
+  if [[ -f $1 ]]; then
+    case $1 in
+      *.tar.bz2)   tar xjfv $1                             ;;
+      *.tar.gz)    tar xzfv $1                             ;;
+      *.tar.xz)    tar xvJf $1                             ;;
+      *.bz2)       bunzip2 $1                              ;;
+      *.gz)        gunzip $1                               ;;
+      *.rar)       unrar x $1                              ;;
+      *.tar)       tar xf $1                               ;;
+      *.tbz)       tar xjvf $1                             ;;
+      *.tbz2)      tar xjf $1                              ;;
+      *.tgz)       tar xzf $1                              ;;
+      *.zip)       unzip $1                                ;;
+      *.Z)         uncompress $1                           ;;
+      *.7z)        7z x $1                                 ;;
+      *)           echo "I don't know how to extract '$1'" ;;
+    esac
+  else
+    case $1 in
+      *help)       echo "Usage: unpack ARCHIVE_NAME"       ;;
+      *)           echo "'$1' is not a valid file"         ;;
+    esac
+  fi
+}
+# function to create archives
+# EXAMPLE: pack tar file
+pack () {
+  if [ $1 ]; then
+    case $1 in
+      tar.bz2)     tar -cjvf $2.tar.bz2 $2                 ;;
+      tar.gz)      tar -czvf $2.tar.bz2 $2                 ;;
+      tar.xz)      tar -cf - $2 | xz -9 -c - > $2.tar.xz   ;;
+      bz2)         bzip $2                                 ;;
+      gz)          gzip -c -9 -n $2 > $2.gz                ;;
+      tar)         tar cpvf $2.tar  $2                     ;;
+      tbz)         tar cjvf $2.tar.bz2 $2                  ;;
+      tgz)         tar czvf $2.tar.gz  $2                  ;;
+      zip)         zip -r $2.zip $2                        ;;
+      7z)          7z a $2.7z $2                           ;;
+      *help)       echo "Usage: pack TYPE FILES"           ;;
+      *)           echo "'$1' cannot be packed via pack()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
+
+alias neofetch='neofetch | lolcat'
+alias mpvip='mpv --ytdl-raw-options="yes-playlist="'

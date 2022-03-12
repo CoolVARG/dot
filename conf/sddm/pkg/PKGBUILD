@@ -1,0 +1,19 @@
+# Maintainer: Alex Creio <ctlos@protonmail.com>
+srcname=ctlos-themes
+pkgname=ctlos-sddm-themes
+pkgver=1.2
+pkgrel=2
+pkgdesc='Sddm themes'
+url="https://github.com/ctlos/ctlos-themes"
+arch=("any")
+groups=('ctlos')
+license=("GPL2")
+depends=('git' 'sddm')
+source=("git+${url}.git")
+sha256sums=('SKIP')
+
+package() {
+  cd ${srcdir}/${srcname}/sddm
+  mkdir -p "${pkgdir}/usr/share/sddm/themes"
+  cp -rf {darkine,slice} "${pkgdir}/usr/share/sddm/themes"
+}

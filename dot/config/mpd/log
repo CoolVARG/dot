@@ -1,0 +1,114 @@
+Aug 17 19:51 : exception: Failed to access /home/timon/Music: No such file or directory
+Aug 17 19:51 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 17 20:24 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 17 20:29 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 17 20:38 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 17 20:42 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 17 21:41 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 18 11:00 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 18 13:33 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 18 14:06 : exception: Failed to decode https://air.radiorecord.ru:8102/rus_320; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:06 : player: played "https://air.radiorecord.ru:8102/rus_320"
+Aug 18 14:06 : exception: Failed to decode https://air.radiorecord.ru:8102/rus_320; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:06 : exception: Failed to decode https://air.radiorecord.ru:8102/rus_aac_64; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:06 : player: played "https://air.radiorecord.ru:8102/rus_aac_64"
+Aug 18 14:06 : exception: Failed to decode https://air.radiorecord.ru:8102/rus_aac_64; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:06 : exception: Failed to decode https://air.radiorecord.ru:805/mix_128; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:06 : player: played "https://air.radiorecord.ru:805/mix_128"
+Aug 18 14:06 : exception: Failed to decode https://air.radiorecord.ru:805/mix_128; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:06 : exception: Failed to decode https://air.radiorecord.ru:8100/rr_aac; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:06 : player: played "https://air.radiorecord.ru:8100/rr_aac"
+Aug 18 14:06 : exception: Failed to decode https://air.radiorecord.ru:8100/rr_aac; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:06 : exception: Failed to decode https://air.radiorecord.ru:8102/rus_128; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:06 : player: played "https://air.radiorecord.ru:8102/rus_128"
+Aug 18 14:06 : exception: Failed to decode https://air.radiorecord.ru:8102/gop_320; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:06 : player: played "https://air.radiorecord.ru:8102/gop_320"
+Aug 18 14:06 : exception: Failed to decode https://air.radiorecord.ru:8102/chil_320; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:06 : player: played "https://air.radiorecord.ru:8102/chil_320"
+Aug 18 14:07 : exception: Failed to decode http://193.124.115.157:8000/stream/1/; CURL failed: Connection timeout after 10009 ms
+Aug 18 14:07 : player: played "http://193.124.115.157:8000/stream/1/"
+Aug 18 14:07 : exception: Failed to decode https://air.radiorecord.ru:8102/rus_320; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:07 : player: played "https://air.radiorecord.ru:8102/rus_320"
+Aug 18 14:07 : exception: Failed to decode https://air.radiorecord.ru:8102/rus_320; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:07 : exception: Failed to decode https://air.radiorecord.ru:8102/rock_320; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:07 : player: played "https://air.radiorecord.ru:8102/rock_320"
+Aug 18 14:07 : exception: Failed to decode https://air.radiorecord.ru:8102/rock_320; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:07 : exception: Failed to decode https://air.radiorecord.ru:8102/tm_128?=1; CURL failed: Could not resolve host: air.radiorecord.ru
+Aug 18 14:07 : player: played "https://air.radiorecord.ru:8102/tm_128?=1"
+Aug 18 14:07 : player: played "http://nashe1.hostingradio.ru/nashespb128.mp3"
+Aug 18 14:24 : exception: Not playing
+Aug 18 17:43 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 18 19:24 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 18 20:42 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 19 06:58 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 19 14:43 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 19 18:28 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 20 17:05 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 20 19:50 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 21 11:02 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 21 18:33 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 22 13:14 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 23 16:28 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 24 11:40 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 24 12:03 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 24 15:25 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 24 18:19 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 25 15:47 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 25 19:41 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 25 21:29 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 26 11:29 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 26 11:52 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 26 16:20 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 27 06:31 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 28 12:25 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 28 12:42 : exception: inotify_add_watch() has failed: No such file or directory
+Aug 28 13:12 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 02 22:35 : exception: Failed to access /home/timon/Music: No such file or directory
+Mar 02 22:35 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 02 22:39 : player: played "http://212.26.146.50:8000/rusrock.mp3"
+Mar 02 22:41 : player: played "http://listen.rusongs.ru/ru-mp3-128"
+Mar 03 07:21 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 03 07:38 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 03 12:01 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 03 14:34 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 03 16:31 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 03 18:11 : player: played "http://listen.vdfm.ru:8000/dacha"
+Mar 03 18:11 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 03 18:27 : player: played "http://listen.vdfm.ru:8000/dacha"
+Mar 03 20:17 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 03 20:50 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 03 21:45 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 04 07:21 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 04 11:32 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 04 17:50 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 04 23:49 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 04 23:51 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 04 23:53 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 05 07:06 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 05 09:53 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 05 18:58 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 06 00:49 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 06 10:12 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 06 16:45 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 06 16:50 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 06 16:56 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 06 17:28 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 07 09:58 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 07 15:08 : player: played "http://212.26.146.50:8000/rusrock.mp3"
+Mar 07 15:28 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 07 15:50 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 07 16:39 : player: played "http://212.26.146.50:8000/rusrock.mp3"
+Mar 07 21:15 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 08 09:24 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 08 15:55 : player: played "http://212.26.146.50:8000/rusrock.mp3"
+Mar 09 07:27 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 09 09:44 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 09 19:23 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 09 19:26 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 10 07:01 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 10 13:38 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 11 07:10 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 11 12:00 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 11 15:26 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 11 19:24 : exception: inotify_add_watch() has failed: No such file or directory
+Mar 12 08:53 : exception: inotify_add_watch() has failed: No such file or directory
