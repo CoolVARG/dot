@@ -1,6 +1,6 @@
 ## Themes
 # set gtk
-#exec_always ~/.config/sway/scripts/gsettings.sh
+exec_always ~/.config/sway/scripts/gsettings.sh
 
 gaps inner 2
 gaps outer 0
@@ -70,6 +70,9 @@ input type:keyboard {
 ## Autostart
 # Auth with polkit-gnome:
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Gnome Keyring
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=ssh,secrets,pkcs11
 
 # Desktop notifications
 exec mako
