@@ -15,7 +15,7 @@ zstyle ':vcs_info:git:*' formats '%b'
 # pkgfile
 source /usr/share/doc/pkgfile/command-not-found.zsh
 # highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/timon/.dot/dot/zsh/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 # brackets
 ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=blue,bold'
