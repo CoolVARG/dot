@@ -13,7 +13,7 @@ sudo pacman -S pulseaudio pulseaudio-alsa pavucontrol pamixer alsa-utils
 sudo pacman -S xorg-xhost boost-libs sway swayidle swaylock swaybg waybar grim slurp mako gtk-layer-shell egl-wayland wayland-protocols wl-clipboard wofi xdg-desktop-portal-wlr xorg-xwayland acpi brightnessctl  dex tumbler
 
 # zsh
-sudo pacman -S pkgfile zsh zsh-completions zsh-syntax-highlighting nano-syntax-highlighting 
+sudo pacman -S pkgfile zsh zsh-completions nano-syntax-highlighting
 
 #проверка орфографии
 sudo pacman -S hunspell aspell nuspell hspell libvoikko 
