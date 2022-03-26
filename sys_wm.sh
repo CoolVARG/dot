@@ -16,9 +16,9 @@ sudo pacman -S xorg-xhost boost-libs sway swayidle swaylock swaybg waybar grim s
 sudo pacman -S pkgfile zsh zsh-completions nano-syntax-highlighting
 
 #проверка орфографии
-sudo pacman -S hunspell aspell nuspell hspell libvoikko 
+sudo pacman -S hunspell aspell nuspell hspell libvoikko
 #словари
-sudo pacman -S aspell-ru 
+sudo pacman -S aspell-ru
 
 # pluma -
 sudo pacman -S pluma 
@@ -32,11 +32,11 @@ sudo pacman -S file-roller unrar p7zip
 # gvfs-smb - 
 sudo pacman -S gvfs-smb gvfs-mtp 
 
-# terminal -
-sudo pacman -S kitty 
+# terminal & update pacman list
+sudo pacman -S kitty reflector
 
 # Агент аутентификации
-sudo pacman -S polkit-gnome 
+sudo pacman -S polkit-gnome gnome-keyring
 
 # gparted
 sudo pacman -S gparted 
@@ -66,25 +66,25 @@ sudo pacman -S ncmpcpp
 sudo pacman -S mpc 
 
 # mpv - бесплатный кросс-платформенный медиа плеер с открытым исходным кодом
-sudo pacman -S mpv youtube-dl 
+sudo pacman -S mpv youtube-dl
 
 # Gimp - Программа манипуляции с изображениями
-sudo pacman -S gimp 
+sudo pacman -S gimp
 
 # Discord -
-sudo pacman -S discord 
+sudo pacman -S discord
 
 # firefox
-sudo pacman -S firefox firefox-i18n-ru  
+sudo pacman -S firefox firefox-i18n-ru
 
 # Почтовый клиент с русификатором
-sudo pacman -S thunderbird thunderbird-i18n-ru 
+sudo pacman -S thunderbird thunderbird-i18n-ru
 
 # Network-manager с парой допов
-sudo pacman -S network-manager-applet networkmanager-openvpn networkmanager-pptp 
+sudo pacman -S network-manager-applet networkmanager-openvpn networkmanager-pptp
 
 # htop
-sudo pacman -S htop 
+sudo pacman -S htop
 
 # QML based X11 and Wayland display manager
 sudo pacman -S sddm qt5-svg qt5-quickcontrols2 qt5-graphicaleffects
@@ -92,7 +92,6 @@ sudo pacman -S sddm qt5-svg qt5-quickcontrols2 qt5-graphicaleffects
 #yay -S ttf-clear-sans
 #yay -S nerd-fonts-hack
 #yay -S otb-uw_ttyp0
-#yay -S inv 
+#yay -S inv
 #yay -S qt5-styleplugins
 #yay -S swaylock-fancy-git
-

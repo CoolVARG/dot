@@ -193,3 +193,4 @@ pack () {
 
 alias neofetch='neofetch | lolcat'
 alias mpvip='mpv --ytdl-raw-options="yes-playlist="'
+alias update='sudo reflector --verbose --country 'Russia' -l 8 -p http --sort rate --save /etc/pacman.d/mirrorlist'
